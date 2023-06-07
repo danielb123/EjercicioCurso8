@@ -13,11 +13,16 @@
     "hdb": "^0.19.0"
   },
   "devDependencies": {
+    "@sap/eslint-plugin-ui5-jsdocs": "^2.0.5",
     "@sap/hdi-deploy": "4.6.1",
+    "@sap/ux-specification": "^1.108.6",
+    "@sapui5/ts-types": "^1.92.2",
+    "eslint": "^7.32.0",
     "sqlite3": "^5"
   },
   "scripts": {
-    "start": "cds-serve"
+    "start": "cds-serve",
+    "watch-project1fiori8": "cds watch --open project1fiori8/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "cds": {
     "hana": {
@@ -28,5 +33,8 @@
         "kind": "hana"
       }
     }
-  }
+  },
+  "sapux": [
+    "app/project1fiori8"
+  ]
 }
