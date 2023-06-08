@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,43 +9,42 @@
     <title>HC450_Fiori_App</title>
     <script>
         window["sap-ushell-config"] = {
-            defaultRenderer: "fiori2",          
-            applications: {     
+            defaultRenderer: "fiori2",
+            applications: {
                 "os-fiori": {
                     title: "Product Overview",
                     description: "Products HC450 Fiori Example",
-                    additionalInformation: "SAPUI5.Component=hc450.officesupplies.osfiori",                 
-                    applicationType : "URL",
-                    url: "/osfiori/webapp",
+                    additionalInformation: "project1fiori8.Component=hc450.officesupplies.project1fiori8",
+                    applicationType: "URL",
+                    url: "/project1fiori8/webapp",
                     navigationMode: "embedded"
                 },
                 "odata-v4": {
                     title: "Products",
                     description: "Products in OData V4",
-                    applicationType : "URL",
+                    applicationType: "URL",
                     url: "/catalog/Products"
                 },
                 "products-fiori": {
                     title: "Product Preview",
                     description: "Productss using Fiori Preview",
-                    applicationType : "URL",
+                    applicationType: "URL",
                     url: "/$fiori-preview/CatalogService/Products#preview-app"
-                }  
+                }
             }
         };
     </script>
 
     <script src="https://sapui5.hana.ondemand.com/test-resources/sap/ushell/bootstrap/sandbox.js"></script>
     <script src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
-        data-sap-ui-libs="sap.m, sap.ushell, sap.collaboration, sap.ui.layout"
-        data-sap-ui-compatVersion="edge"
-        data-sap-ui-theme="sap_fiori_3_dark"
-        data-sap-ui-frameOptions="allow"
-    ></script>
+        data-sap-ui-libs="sap.m, sap.ushell, sap.collaboration, sap.ui.layout" data-sap-ui-compatVersion="edge"
+        data-sap-ui-theme="sap_fiori_3_dark" data-sap-ui-frameOptions="allow"></script>
     <script>
-        sap.ui.getCore().attachInit(()=> sap.ushell.Container.createRenderer().placeAt("content"))
+        sap.ui.getCore().attachInit(() => sap.ushell.Container.createRenderer().placeAt("content"))
     </script>
 
 </head>
+
 <body class="sapUiBody" id="content"></body>
+
 </html>
