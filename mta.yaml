@@ -81,6 +81,9 @@ resources:
       path: ./xs-security.json
       config:
         xsappname: 'HC_OFF_SUPPLIES-${space}'
+        oauth2-configuration:
+          redirect-uris:
+            - https://55b3dca8trial-dev-hc-off-supplies-approuter.cfapps.us10-001.hana.ondemand.com/login/callback
         role-collections:
           - name: 'Vendor-${space}'
             description: Read Access

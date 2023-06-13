@@ -38,7 +38,7 @@
         "kind": "hana"
       },
       "auth": {
-        "kind": "mocked"
+        "kind": "xsuaa"
       }
     }
   },
