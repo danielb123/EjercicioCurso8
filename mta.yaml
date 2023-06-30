@@ -18,7 +18,6 @@ modules:
     path: gen/srv
     requires:
       - name: HC_OFF_SUPPLIES-db
-      - name: HC_OFF_SUPPLIES-xsuaa
       - name: HC_OFF_SUPPLIES-destination
     provides:
       - name: srv-api
